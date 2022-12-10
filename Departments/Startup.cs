@@ -39,7 +39,7 @@ namespace Departments
             });
             
             services.AddScoped<IRepository<Department>, DbDepartmentRepository>();
-            services.AddSingleton<IRepository<Department>, FileDepartmentRepository>();
+            services.AddScoped<IRepository<Department>, FileDepartmentRepository>();
             services.AddScoped<IDepartmentService, DepartmentService>();
 
             services.AddScoped<IRandomStatusService, RandomStatusService>();

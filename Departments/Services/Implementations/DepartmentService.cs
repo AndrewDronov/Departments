@@ -68,7 +68,7 @@ namespace Departments.Services.Implementations
             {
                 _dbRepository.Create(department);
                 // If we need to create model in file repository, uncomment code below.
-                //_fileContext.Create(department);
+                //_fileRepository.Create(department);
             }
             catch (Exception e)
             {
@@ -85,7 +85,7 @@ namespace Departments.Services.Implementations
             {
                 _dbRepository.Update(department);
                 // If we need to update model in file repository, uncomment code below.
-                //_fileContext.Update(department);
+                //_fileRepository.Update(department);
             }
             catch (Exception e)
             {
@@ -103,7 +103,7 @@ namespace Departments.Services.Implementations
                 _dbRepository.Remove(department);
 
                 // If we need to remove model from file repository, uncomment code below.
-                //_fileContext.Remove(department);
+                //_fileRepository.Remove(department);
             }
             catch (Exception e)
             {

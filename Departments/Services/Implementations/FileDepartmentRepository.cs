@@ -18,7 +18,7 @@ namespace Departments.Services.Implementations
         {
             if (!File.Exists(Path))
             {
-                File.Create(Path, 0, FileOptions.None).Close();
+                File.Create(Path).Close();
             }
         }
 
